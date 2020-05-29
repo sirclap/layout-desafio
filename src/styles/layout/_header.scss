@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    justify-content: space-between;   
+
+    .header-logo {
+        display: inline-flex;
+    
+        .platform-title {
+            align-self: center;
+            margin-left: 1rem;
+        }
+    }
+
+    .header-buttons {
+        align-self: center;
+        display: inline-flex;
+    
+        div {        
+            cursor: pointer;
+            border-radius: 3px;
+            padding: 1rem;
+    
+            &:hover {
+                background-color: $text-color;
+                color: $base-color;
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    header {
+        .header-logo {
+            .platform-title {
+                display: none;
+            }
+        }
+    }
+}
