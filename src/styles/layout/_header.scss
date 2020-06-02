@@ -1,6 +1,13 @@
-header {
+header {        
     display: flex;
     justify-content: space-between;   
+
+    position: fixed;
+    top: 0;    
+    background-color: $base-color;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
 
     .header-logo {
         display: inline-flex;
@@ -14,11 +21,12 @@ header {
     .header-buttons {
         align-self: center;
         display: inline-flex;
-    
+        
         div {        
             cursor: pointer;
             border-radius: 3px;
-            padding: 1rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
     
             &:hover {
                 background-color: $text-color;
