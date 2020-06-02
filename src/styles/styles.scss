@@ -1,13 +1,7 @@
-@import url('https://fonts.google.com/specimen/Jost?preview.text=warner+live&preview.text_type=custom');
-
 @import "theme/default-theme";
 
 @import "layout/header";
 
 @import "layout/main-content";
 
-body {
-    background-color: $base-color;
-    color: $text-color;
-    font-family: 'Jost', sans-serif;
-}
+@import "layout/main";
